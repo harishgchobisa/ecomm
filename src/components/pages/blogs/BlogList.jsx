@@ -12,8 +12,7 @@ const BlogList = (props) => {
         <div className="blog">
           <div className="blogImg">
             <Link to={`/blogs/${id}`} title={title}>
-              {(postImg !== "") ? <img src={postImg} alt={title} /> : <img src={ImagePlaceholdar} alt={title} />}
-              
+              {(postImg !== "") ? <img src={postImg} alt={title} /> : <img src={ImagePlaceholdar} alt={title} />}              
             </Link>
           </div>
           <h3><Link to={`/blogs/${id}`} title={title}>{title}</Link></h3>
