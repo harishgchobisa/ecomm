@@ -1,11 +1,8 @@
-import { Container } from "react-bootstrap"
 import './loader.scss'
 const loader = () => {
   return(
     <div className="loading">
-      <Container>
-        <p>Loading...</p>
-      </Container>
+      <div class="loader"></div>
     </div>
   )
 }

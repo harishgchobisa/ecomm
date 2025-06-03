@@ -28,7 +28,6 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  if (loading) return <Loader />;
   if (error) return <div>Error: {error}</div>;
 
   return (
@@ -37,6 +36,7 @@ const Products = () => {
       <Container className="products">
         <Row>
           {
+            (loading) ? <Loader /> :
             products.map((res) => {
               return(<ProductList key={res.id} data={res} />)
             })
