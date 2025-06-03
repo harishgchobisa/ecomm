@@ -29,7 +29,6 @@ const Blogs = () =>{
     fetchBlog();
   }, [])
   
-  if(loading) return <Loader />;
   if(error) return <p>{error}</p>;
 
   return(
@@ -39,6 +38,7 @@ const Blogs = () =>{
         <Container>
           <Row>
             {
+              (loading) ? <Loader /> :
               blogs.map((res) => {
                 return(<BlogList key={res.id} data={res} />)
               })
