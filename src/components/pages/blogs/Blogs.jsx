@@ -8,7 +8,7 @@ import BlogList from "./BlogList";
 const Blogs = () =>{
   const[blogs, setBlogs] = useState([]);
   const[loading, setLoading] = useState(true);
-  const[errorMessage, setErrorMessage] = useState(null);
+  const[error, setError] = useState(null);
 
 
   const API = "http://localhost:5173/src/services/blogs.json";
@@ -19,7 +19,7 @@ const Blogs = () =>{
       setBlogs(blogsData.data.posts);
       setLoading(false);
     } catch (error) {
-      setErrorMessage(`Error ouucred: ${error}`)
+      setError(`Error ouucred: ${error}`)
       setLoading(false);
     }
   }
@@ -30,7 +30,7 @@ const Blogs = () =>{
   }, [])
   
   if(loading) return <Loader />;
-  if(errorMessage) return <p>{errorMessage}</p>;
+  if(error) return <p>{error}</p>;
 
   return(
     <>

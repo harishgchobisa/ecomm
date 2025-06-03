@@ -30,4 +30,38 @@ body{
     font-size: 22px;
     line-height: 28px;
   }
+  .primaryBtn{
+      text-decoration: none;
+      background: transparent;
+      color: var(--brandColor);
+      width: 150px;
+      text-align: center;
+      margin-top: 20px;
+      padding: 5px 10px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      border: 2px solid var(--brandColor);
+      &:hover, &:focus{
+        background: var(--brandColor);
+        color: var(--white);
+        border: 2px solid var(--brandColor);
+      }
+    }
+  .secondaryBtn{
+    text-decoration: none;
+    background: var(--black);
+    color: var(--white);
+    width: 150px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    &:hover, &:focus, &:focus-within, &:focus-visible, &:active{
+      background: var(--brandColor);
+      color: var(--white);
+      border: 2px solid var(--brandColor);
+    }
+  }
 }

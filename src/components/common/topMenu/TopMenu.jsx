@@ -7,7 +7,7 @@ const TopMenu = () =>{
   return(
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home"><img src={Logo} alt="Danza" /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={Logo} alt="Danza" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <ul className="me-auto">
