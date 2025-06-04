@@ -65,3 +65,30 @@ body{
     }
   }
 }
+
+.custom-modal{
+  .close-btn{
+    width: fit-content;
+    position: absolute;
+    opacity: .3;
+    right: 0;
+    z-index: 11;
+    color: var(--black);
+    font-size: 30px;
+    line-height: 24px;
+    padding: 3px;
+    background: transparent;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 5px;
+    &:hover, &:focus{
+      opacity: 1;
+      background: var(--brandColor);
+      color: var(--white);
+      border-color: var(--brandColor);
+    }
+  }
+  .modal-body{
+    padding: 35px;
+  }
+}

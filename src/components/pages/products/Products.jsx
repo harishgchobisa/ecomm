@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Modal } from 'react-bootstrap';
 import axios from 'axios';
 import './Products.scss';
 import InnerBanner from '../../common/innerBanner/InnerBanner';
@@ -30,6 +30,7 @@ const Products = () => {
 
   if (error) return <div>Error: {error}</div>;
 
+
   return (
     <>
       <InnerBanner pagetitle="Products" />
@@ -42,6 +43,7 @@ const Products = () => {
             })
           }
         </Row>
+
       </Container>
     </>
   );
