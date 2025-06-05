@@ -1,0 +1,17 @@
+[
+  {
+    "iconName": "SiGooglemaps",
+    "title": "Find us",
+    "content": "Ahmedabad, Gujarat"
+  },
+  {
+    "iconName": "IoIosMail",
+    "title": "Email us",
+    "content": "+91-9854725478"
+  },
+  {
+    "iconName": "FiPhoneCall",
+    "title": "Call us",
+    "content": "reactDemo@gmail.com"
+  }
+]
