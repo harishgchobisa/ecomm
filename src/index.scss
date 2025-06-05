@@ -48,6 +48,23 @@ body{
         border: 2px solid var(--brandColor);
       }
     }
+  .primaryFilledBtn{
+    text-decoration: none;
+    background: var(--brandColor);
+    color: var(--white);
+    text-align: center;
+    padding: 8px 30px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    border: 2px solid var(--brandColor);
+    display: inline-block;
+    font-size: 18px;
+      &:hover, &:focus{
+        background: var(--white);
+        color: var(--brandColor);
+        border: 2px solid var(--white);
+      }
+    }
   .secondaryBtn{
     text-decoration: none;
     background: var(--black);
