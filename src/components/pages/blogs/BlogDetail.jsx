@@ -35,7 +35,6 @@ const BlogDetail = () => {
   if(errorMessage) return <p>{errorMessage}</p>;
 
   const{title, body, views, tags, postImg, reactions} = blog;
-  console.log(blog);
   return(
     <>
       <InnerBanner pagetitle={`Danza - Blog details`} />

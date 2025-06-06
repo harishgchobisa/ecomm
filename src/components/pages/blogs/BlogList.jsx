@@ -5,7 +5,6 @@ import ImagePlaceholdar from "/public/placeholderImg.svg";
 
 const BlogList = (props) => {
   const{id, title, body, postImg} = props.data;
-  console.log()
   return(
     <>
       <Col xs={12} sm={6} xl={4} xxl={3}>
