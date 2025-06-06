@@ -1,6 +1,5 @@
-import { Route, Routes } from "react-router"
-import Footer from "./components/common/footer/Footer"
-import Header from "./components/common/header/Header"
+import { createBrowserRouter, RouterProvider } from "react-router"
+import AppLayout from "./components/common/appLayout/AppLayout"
 import Home from "./components/pages/home/Home"
 import Blogs from "./components/pages/blogs/Blogs"
 import BlogDetail from "./components/pages/blogs/BlogDetail"
@@ -10,20 +9,45 @@ import UserDetails from "./components/pages/user/UserDetails"
 import ErrorPage from "./components/pages/errorPage/ErrorPage"
 
 const App = () => {
+  const routers = createBrowserRouter([
+    {
+      path: '/',
+      element: <AppLayout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />
+        },
+        {
+          path: '/products',
+          element: <Products />
+        },
+        {
+          path: '/blogs',
+          element: <Blogs />
+        },
+        {
+          path: '/blogs/:id',
+          element: <BlogDetail />
+        },
+        {
+          path: '/about',
+          element: <About />
+        },
+        {
+          path: '/user/:id',
+          element: <UserDetails />
+        },
+        {
+          path: '*',
+          element: <ErrorPage />
+        }
+      ]
+    }
+  ]);
+
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/products' element={<Products />}></Route>
-        <Route path='/blogs' element={<Blogs />}></Route>
-        <Route path="/blogs/:id" element={<BlogDetail />} />
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/user/:id' element={<UserDetails />} />
-        <Route path="*" element={<ErrorPage />}></Route>
-      </Routes>
-      <Footer />
-    </>
+    <RouterProvider router={routers}></RouterProvider>
   )
 }
 
