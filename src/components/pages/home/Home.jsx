@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Container } from "react-bootstrap"
 import Banner from "../../common/banner/Banner";
 import BannerImg from '/public/dance-banner.jpg';
+import OurTeam from "../../common/ourTeam/OurTeam";
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Container>
         Home Page
       </Container>
+      <OurTeam />
     </>
   )
 }

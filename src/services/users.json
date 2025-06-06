@@ -1,0 +1,77 @@
+[
+  {
+    "userID": 1,
+    "name": "Alice Johnson",
+    "password": "Alice@123",
+    "designation": "Software Engineer",
+    "userImage": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "country": "United States",
+    "mobileNumber": "+1-123-456-7890",
+    "emailID": "alicejohnson@example.com",
+    "role": "admin",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/alicejohnson",
+      "twitter": "https://twitter.com/alicejohnson"
+    }
+  },
+  {
+    "userID": 2,
+    "name": "Bob Smith",
+    "password": "Bob@123",
+    "designation": "Product Manager",
+    "userImage": "https://images.pexels.com/photos/16132020/pexels-photo-16132020/free-photo-of-a-woman-in-a-dress-and-hat-is-posing.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "country": "United Kingdom",
+    "mobileNumber": "+44-987-654-3210",
+    "emailID": "bobsmith@example.com",
+    "role": "user",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/bobsmith",
+      "twitter": "https://twitter.com/bobsmith"
+    }
+  },
+  {
+    "userID": 3,
+    "name": "Carlos Mendoza",
+    "password": "Carlos@123",
+    "designation": "UX Designer",
+    "userImage": "https://images.pexels.com/photos/4567833/pexels-photo-4567833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "country": "Mexico",
+    "mobileNumber": "+52-555-123-4567",
+    "emailID": "carlosmendoza@example.com",
+    "role": "admin",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/carlosmendoza",
+      "twitter": "https://twitter.com/carlosmendoza"
+    }
+  },
+  {
+    "userID": 4,
+    "name": "Diana Patel",
+    "password": "Diana@123",
+    "designation": "Data Scientist",
+    "userImage": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "country": "India",
+    "mobileNumber": "+91-98765-43210",
+    "emailID": "dianapatel@example.com",
+    "role": "user",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/dianapatel",
+      "twitter": "https://twitter.com/dianapatel"
+    }
+  },
+  {
+    "userID": 5,
+    "name": "Ethan Carter",
+    "password": "Ethan@123",
+    "designation": "Marketing Specialist",
+    "userImage": "https://images.pexels.com/photos/1486064/pexels-photo-1486064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "country": "Canada",
+    "mobileNumber": "+1-647-555-7890",
+    "emailID": "ethancarter@example.com",
+    "role": "admin",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/ethancarter",
+      "twitter": "https://twitter.com/ethancarter"
+    }
+  }
+]
