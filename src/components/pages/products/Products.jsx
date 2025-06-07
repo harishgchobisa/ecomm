@@ -5,22 +5,22 @@ import './Products.scss';
 import InnerBanner from '../../common/innerBanner/InnerBanner';
 import Loader from '../../common/loader/Loader';
 import ProductList from './ProductList';
+import { getProducts } from '../../../services/ProductsServices';
 
 const Products = () => {
   const[products, setProducts] = useState([]);
   const[loading, setLoading] = useState(true);
   const[error, setError] = useState(null);
   
-  const ProductAPI = 'http://localhost:5173/src/services/products.json';
-  
+    
   const fetchProducts = async () => {
     try {
-      const response = await axios.get(ProductAPI);
+      const response = await getProducts();
       setProducts(response.data.products);
-      setLoading(false);      
+      setLoading(false);  
     } catch (error) {
       setError(error);
-      setLoading(false);
+      setLoading(false); 
     }
   };
 
