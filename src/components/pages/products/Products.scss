@@ -80,4 +80,54 @@
       }
     }
   }
+
+  .sort-serach{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sort{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    .sort-icon{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      svg{
+        &:hover{
+          color: var(--brandColor);
+        }
+      }
+    }
+  }
+
+  .product-serach{
+    position: relative;
+    width: 350px;
+    input{
+      height: 50px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      font-size: 18px;
+      &:focus{
+        outline: none;
+        box-shadow: none;
+        border-color: var(--black);
+      }
+    }
+    .search-icon{
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--black);
+      font-size: 20px;
+    }
+  }
+
 }
